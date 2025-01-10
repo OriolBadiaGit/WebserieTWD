@@ -30,12 +30,15 @@ header {
   display: flex;
   gap: 15%;
   align-items: center;
+  display: flex;
   color: #383125;
 }
 
-.ContainerMenuToggle {
+.ContainerMenuToggle, .CloseMenu {
   display: none;
 }
+
+
 
 ul {
   display: flex;
@@ -58,9 +61,6 @@ li {
   color: #af9b7d;
 }
 
-.activeheader {
-  display: none;
-}
 
 li:hover {
   cursor: pointer;
@@ -194,7 +194,6 @@ a {
     font-size: 200%;
     position: relative;
     justify-content: center;
-    /* display: none; */
   }
 
   .CloseMenu {

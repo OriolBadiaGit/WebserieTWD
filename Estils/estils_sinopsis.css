@@ -27,8 +27,11 @@ header {
   display: flex;
   gap: 15%;
   align-items: center;
-  padding-left: 1%;
   color: #383125;
+}
+
+.ContainerMenuToggle, .CloseMenu {
+  display: none;
 }
 
 ul {
@@ -141,4 +144,110 @@ a {
   margin: 10% 0% 0% 2%;
   text-align: justify;
   font-weight: 300;
+}
+
+/* ! WEB MEDIAQUERIES */
+
+/*MOBILE*/
+@media (max-width: 480px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url(../Imatges/thumb-1920-1329198Mobile.jpg) no-repeat to center;
+  }
+
+  .ContainerMenuToggle {
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 2% 0%;
+  }
+
+  .MenuToggle {
+    background-color: #af9b7d;
+    padding: 3%;
+    border-radius: 50%;
+    margin-top: 5%;
+  }
+
+  header {
+    background-color: rgba(175, 155, 125, 0.9);
+    min-height: 95vh;
+    display: flex;
+    font-size: 200%;
+    position: relative;
+    justify-content: center;
+  }
+
+  .CloseMenu {
+    display: flex;
+    /* background-color: white; */
+    position: absolute;
+    top: 1%;
+    right: 3%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  li {
+    /* background-color: antiquewhite; */
+    padding: 2%, 2%;
+    margin: 13% 3%;
+    font-family: "Itim", cursive;
+  }
+
+  .active {
+    border: 2px solid #383125;
+    border-radius: 10px;
+    background-color: #383125;
+    color: #af9b7d;
+  }
+
+  .activeheader {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  footer {
+    background-color: #af9b7d;
+    position: sticky;
+    bottom: 0%;
+    width: 100%;
+    height: 10%;
+    font-family: "Itim";
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    color: #383125;
+  }
+}
+
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 768px) {
+  #clm1 {
+    background-color: rgb(2, 69, 145);
+    color: white;
+  }
+
+  #clm2 {
+    background-color: rgb(128, 5, 128);
+    color: white;
+  }
+}
+
+/*PC*/
+@media (min-width: 769px) {
+  #clm1 {
+    background-color: rgb(150, 2, 14);
+  }
+
+  #clm2 {
+    background-color: rgb(226, 147, 43);
+  }
 }
